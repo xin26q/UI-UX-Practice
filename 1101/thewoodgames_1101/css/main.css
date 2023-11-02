@@ -30,7 +30,7 @@ main>header {
     text-align: center;
 }
 
-main>header>img.logo {
+main>header img.logo {
     width: 150px;
     -webkit-user-drag: none;
     /* display: inline-block;
@@ -133,20 +133,108 @@ main>nav>ul>li>.nav-item>.nav-child {
     padding-top: 30px;
 }
 
-@media(max-width:992px){
-    main>nav>ul{
+
+/* shop.html 的 css */
+
+.shop-content>.p-content {
+    color: #58595b;
+    line-height: 1.5;
+    font-weight: bold;
+    letter-spacing: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shop-content>.item-wrap {
+    border: 2px solid #8f7900;
+}
+
+.shop-content>.item-wrap>.item-row {
+    display: flex;
+    padding: 15px;
+}
+
+.shop-content>.item-wrap>.item-row>div {
+    flex: 1;
+}
+
+.shop-content>.item-wrap>.item-row>.item-left>img {
+
+}
+
+.shop-content>.item-wrap>.item-row>.item-mid{
+    
+}
+
+.shop-content>.item-wrap>.item-row>.item-right{
+    width: 316px;
+}
+
+.shop-content>.item-wrap>.item-row>.item-right>.item-title {
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #8f7900;
+}
+
+.shop-content>.item-wrap>.item-row>.item-right>.item-child {
+    display: flex;
+}
+
+.set {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #8f7900;
+}
+
+#set2 {
+    margin-top: 15px;
+}
+
+.set-content {
+    font-size: 13px;
+    line-height: 1.45;
+    font-weight: 600;
+}
+
+.shop-content>.item-wrap>.item-row>.item-right>.item-child .item-child-right {
+    margin-left: 49px;
+    height: 50%;
+    padding: 10px 15px;
+    background-color: #8f7900;
+    border-radius: 4px;
+
+}
+
+.shop-content>.item-wrap>.item-row>.item-right>.item-child .item-child-right a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+}
+
+.shop-content>.item-wrap>.item-row>.item-right>.item-child .item-child-right:hover{
+    background-color: #000;
+}
+
+
+
+
+
+
+
+@media(max-width:992px) {
+    main>nav>ul {
         flex-direction: column;
     }
-    main>nav>ul>li{
+
+    main>nav>ul>li {
         width: 100%;
     }
+
     main>nav>ul>li>.nav-item:hover>.nav-child {
         display: none;
     }
 }
 
-@media(min-width:992px){
-    body{
-        background-color: aquamarine;
-    }
-}
+@media(min-width:992px) {}
