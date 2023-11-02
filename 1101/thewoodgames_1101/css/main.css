@@ -19,9 +19,11 @@ ul {
 }
 
 main {
-    width: 980px;
+    width: 100%;
     /* background-color: aqua; */
     margin: 0 auto;
+    max-width: 980px;
+    padding: 0 15px;
 }
 
 main>header {
@@ -30,7 +32,10 @@ main>header {
 
 main>header>img.logo {
     width: 150px;
-    margin: 50px 0;
+    -webkit-user-drag: none;
+    /* display: inline-block;
+    margin: auto 0; */
+    margin: 50px 0 30px;
 }
 
 /* img.logo{
@@ -55,7 +60,8 @@ main>nav>ul {
 
 main>nav>ul>li {
     display: inline-block;
-    width: 33%;
+    width: 33.33333%;
+    margin-right: -4px;
     height: 60px;
     text-align: center;
     line-height: 60px;
@@ -63,7 +69,58 @@ main>nav>ul>li {
     font-weight: bold;
 }
 
-main>nav>ul>li>span.en-text {
-    color: #8f7900;
+main>nav>ul>li>.nav-item {
+    text-decoration: none;
+    color: #000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+main>nav>ul>li>.nav-item:hover .nav-child {
+    display: block;
+    position: absolute;
+    background-color: #8f7900;
+    width: 100%;
+}
+
+main>nav>ul>li>.nav-item>.nav-child a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 1.5;
+    display: block;
+    text-align: left;
+    padding: 15px 25px;
+}
+
+main>nav>ul>li>.nav-item:hover>.nav-child :hover {
+    background-color: #000;
+}
+
+main>nav>ul>li>.nav-item:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+    cursor: pointer;
+    display: block;
+}
+
+main>nav>ul>li>.nav-item>.en-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 650;
+    color: #8f7900;
+}
+
+main>nav>ul>li>.nav-item>.nav-child {
+    display: none;
+}
+
+.content img {
+    width: 100%;
+}
+
+.content .dm1 {
+    padding-top: 10px;
+}
+
+.content .dm2 {
+    padding-top: 30px;
 }
