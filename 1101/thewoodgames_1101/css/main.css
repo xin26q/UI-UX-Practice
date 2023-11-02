@@ -124,3 +124,15 @@ main>nav>ul>li>.nav-item>.nav-child {
 .content .dm2 {
     padding-top: 30px;
 }
+
+@media(max-width:992px){
+    main>nav>ul>li{
+        width: 100%;
+    }
+}
+
+@media(min-width:992px){
+    body{
+        background-color: aquamarine;
+    }
+}
